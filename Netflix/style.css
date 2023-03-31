@@ -1,0 +1,336 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Targetting the navbar  */
+#header {
+    position: relative;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    /* width: 100vw; */
+    overflow-x: hidden;
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('./images/background.png') no-repeat center/cover;
+}
+
+#logo img {
+    width: 100px;
+}
+
+#buttons select,
+button {
+    background-color: rgb(229 9 20);
+    color: white;
+    width: 75px;
+    padding: 3px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+#buttons {
+    display: flex;
+}
+
+#buttons select {
+    background-color: transparent !important;
+    border: 2px solid whitesmoke;
+}
+
+#buttons span {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 150vw;
+    position: relative;
+    top: -50px;
+}
+
+/*  */
+#content,
+#contentBottom {
+    text-align: center;
+    line-height: 2;
+    padding: 20px;
+}
+
+#content h1,
+#contentBottom h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.6rem;
+}
+
+#content p,
+#contentBottom p {
+    font-size: 16px;
+}
+
+#email {
+    border: 2px solid whitesmoke;
+    background-color: transparent;
+    color: white;
+    width: 350px;
+    padding: 18px;
+    margin: 5px;
+}
+
+#started {
+    background-color: rgb(229 9 20);
+    color: white;
+    width: 150px;
+    padding: 16px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#searchBox {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Section enjoyTv started */
+#enjoyTv,
+#downloadShows,
+#watchEveryWhere,
+#createProfile {
+    display: flex;
+    width: 96vw;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+
+#enjoyTv h1,
+#downloadShows h1,
+#watchEveryWhere h1,
+#createProfile h1 {
+    font-size: 1.7rem;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#enjoyTvLeft,
+#downloadRight,
+#watchEveryWhereLeft,
+#createProfileLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid white; */
+    padding: 20px;
+    min-width: 20%;
+    max-width: 40%;
+}
+
+#enjoyTvRight,
+#downloadLeft,
+#watchEveryWherRight,
+#createProfileRight,
+#watchEveryWhereRight {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+#enjoyTvRight img,
+#downloadLeft img,
+#watchEveryWhere img,
+#createProfile img {
+    width: 350px;
+}
+
+/* Adding all the gif */
+#enjoyTvRight::before,
+#watchEveryWhereRight::before {
+    content: "";
+    position: absolute;
+    height: 59%;
+    width: 77%;
+    left: 41px;
+    z-index: -1;
+    opacity: 1;
+    background: url(https://media.tenor.com/OEE4YCpJO2wAAAAC/shah-rukh-khan-pathaan.gif) no-repeat center/cover;
+}
+
+#watchEveryWhereRight::before {
+    content: "";
+    position: absolute;
+    height: 48%;
+    width: 65%;
+    left: 58px;
+    top: 20px;
+    z-index: -1;
+    opacity: 1;
+    background: url(https://media.tenor.com/4VWczGoUxkUAAAAC/shah-rukh-khan-pathaan.gif) no-repeat center/cover;
+}
+
+/*  FAQ   */
+#faQ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#faQ h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2rem;
+}
+
+#faQ details {
+    width: 80%;
+    margin: 5px;
+    font-size: 30px;
+    min-height: 50px;
+    display: flex;
+
+}
+
+
+#faQ summary {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(75 71 71);
+    width: 100%;
+    border: none;
+    margin: 2px auto;
+    font-size: 20px;
+    min-height: 30px;
+    display: flex;
+    padding-top: 12px;
+    padding-left: 13px;
+    transition: all 1s;
+}
+
+#faQ summary:hover {
+    background-color: rgb(124 124 124);
+}
+
+#faQ div {
+    font-family: 'Roboto', sans-serif;
+    padding: 12px;
+    font-size: 20px;
+    background-color: rgb(75 71 71);
+    width: 98.6%;
+}
+
+
+#startedBottom {
+    background-color: rgb(229 9 20);
+    color: white;
+    width: 150px;
+    padding: 16px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#emailBottom {
+    border: 2px solid whitesmoke;
+    background-color: transparent;
+    color: white;
+    width: 350px;
+    padding: 18px;
+    margin: 5px;
+}
+
+#contentBottom p {
+    font-size: 20px;
+}
+
+#searchBoxBottom{
+    display: flex;
+    justify-content: center;
+}
+/* Footer  */
+#footer_section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 96vw;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+#footer_section div p{
+    color: whitesmoke;
+    font-size: 0.61rem;
+    padding: 3px;
+    margin: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+ #footer {
+    display: flex;
+    height: 115px;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+
+/*
+#left , #mid,#right{
+    display: flex;
+}
+
+#left a ,#mid a ,#right a  {
+    text-decoration: none;
+    color: whitesmoke
+} */
+
+
+#footer a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    color: whitesmoke;
+    font-size: 0.61rem;
+    padding: 3px;
+    margin: 2px;
+}
+#footer a:hover{
+    color:rgb(175, 175, 175);
+}
+/* Utility */
+hr {
+    border: 3px solid rgb(56, 55, 55);
+    color: black;
+}
