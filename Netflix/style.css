@@ -13,9 +13,9 @@ body {
 /* Targetting the navbar  */
 #header {
     position: relative;
-    height: 450px;
+    height: 600px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     /* width: 100vw; */
@@ -34,7 +34,7 @@ body {
 }
 
 #logo img {
-    width: 100px;
+    width: 150px;
 }
 
 #buttons select,
@@ -43,7 +43,7 @@ button {
     color: white;
     width: 75px;
     padding: 3px;
-    margin: 10px;
+    margin: 0px 10px;
     border: none;
     border-radius: 4px;
 }
@@ -55,6 +55,11 @@ button {
 #buttons select {
     background-color: transparent !important;
     border: 2px solid whitesmoke;
+    color: white;
+}
+
+#buttons select option {
+    color: black;
 }
 
 #buttons span {
@@ -69,10 +74,10 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 150vw;
     position: relative;
-    top: -50px;
+    top: -6rem;
 }
 
 /*  */
@@ -85,13 +90,41 @@ button {
 
 #content h1,
 #contentBottom h1 {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 1.6rem;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#logoLang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #a6a0a0;
+    padding: 2px 5px;
+    border-radius: 4px;
+    background: transparent;
+}
+
+ion-icon{
+    font-size: 20px;
+}
+#logoLang>select {
+    color: white;
+    width: 90px;
+    padding: 7px 0px;
+    margin: 0px 0px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 15px;
+    background: transparent;
+    text-align: center;
 }
 
 #content p,
 #contentBottom p {
-    font-size: 16px;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 #email {
@@ -100,17 +133,18 @@ button {
     color: white;
     width: 350px;
     padding: 18px;
-    margin: 5px;
+    margin: 10px;
 }
 
 #started {
     background-color: rgb(229 9 20);
     color: white;
-    width: 150px;
-    padding: 16px;
-    margin: 5px;
+    width: 170px;
+    padding: 13px;
     font-size: 20px;
-    border-radius: 5px;
+    border-left: none;
+    border: 2px solid rgb(299 9 20);
+    border-radius: 6px;
 }
 
 #searchBox {
@@ -132,7 +166,7 @@ button {
     width: 96vw;
     align-items: center;
     justify-content: center;
-    min-height: 400px;
+    min-height: 600px;
     flex-wrap: wrap;
 }
 
@@ -140,8 +174,16 @@ button {
 #downloadShows h1,
 #watchEveryWhere h1,
 #createProfile h1 {
-    font-size: 1.7rem;
+    font-size: 3rem;
+    font-weight: 900;
     font-family: 'Archivo Black', sans-serif;
+}
+#enjoyTv p,
+#downloadShows p,
+#watchEveryWhere p,
+#createProfile p {
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 #enjoyTvLeft,
@@ -168,13 +210,14 @@ button {
     align-items: center;
     align-content: center;
     position: relative;
+width: 30rem;
 }
 
 #enjoyTvRight img,
 #downloadLeft img,
 #watchEveryWhere img,
 #createProfile img {
-    width: 350px;
+     width: 100%; 
 }
 
 /* Adding all the gif */
@@ -182,8 +225,8 @@ button {
 #watchEveryWhereRight::before {
     content: "";
     position: absolute;
-    height: 59%;
-    width: 77%;
+    height: 60%;
+    width: 83%;
     left: 41px;
     z-index: -1;
     opacity: 1;
@@ -193,10 +236,10 @@ button {
 #watchEveryWhereRight::before {
     content: "";
     position: absolute;
-    height: 48%;
-    width: 65%;
-    left: 58px;
-    top: 20px;
+    width: 62%;
+    left: 6rem;
+    height: 45%;
+    top: 40px;
     z-index: -1;
     opacity: 1;
     background: url(https://media.tenor.com/4VWczGoUxkUAAAAC/shah-rukh-khan-pathaan.gif) no-repeat center/cover;
@@ -209,6 +252,7 @@ button {
     align-items: center;
     flex-direction: column;
     padding: 30px;
+  
 }
 
 #faQ h1 {
@@ -217,27 +261,37 @@ button {
 }
 
 #faQ details {
-    width: 80%;
     margin: 5px;
     font-size: 30px;
     min-height: 50px;
     display: flex;
-
+    width: 80%;
+    position: relative
 }
 
 
 #faQ summary {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(75 71 71);
-    width: 100%;
+    font-family:  sans-serif;
+    background-color: #2d2d2d;
     border: none;
     margin: 2px auto;
     font-size: 20px;
     min-height: 30px;
     display: flex;
-    padding-top: 12px;
-    padding-left: 13px;
+    padding: 1.5rem;
     transition: all 1s;
+}
+
+#faQ summary span {
+    position: absolute;
+    right: 20px;
+    font-size: 40px;
+    top: 16px;
+    transition: all 0.1s;
+}
+
+#faQ summary span:hover {
+    transform: rotate(45deg)
 }
 
 #faQ summary:hover {
@@ -248,19 +302,19 @@ button {
     font-family: 'Roboto', sans-serif;
     padding: 12px;
     font-size: 20px;
-    background-color: rgb(75 71 71);
-    width: 98.6%;
+    background-color: rgb(75 71 71)
 }
 
 
 #startedBottom {
     background-color: rgb(229 9 20);
     color: white;
-    width: 150px;
+    width: 165px;
     padding: 16px;
-    margin: 5px;
-    font-size: 20px;
+    margin: 4px;
+    border: 2px solid rgb(299 9 20);
     border-radius: 5px;
+    font-size: 20px;
 }
 
 #emailBottom {
@@ -276,12 +330,13 @@ button {
     font-size: 20px;
 }
 
-#searchBoxBottom{
+#searchBoxBottom {
     display: flex;
     justify-content: center;
 }
+
 /* Footer  */
-#footer_section{
+#footer_section {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -289,14 +344,16 @@ button {
     margin: 20px;
     flex-wrap: wrap;
 }
-#footer_section div p{
+
+#footer_section div p {
     color: whitesmoke;
     font-size: 0.61rem;
     padding: 3px;
     margin: 2px;
     font-family: 'Roboto', sans-serif;
 }
- #footer {
+
+#footer {
     display: flex;
     height: 115px;
     justify-content: space-evenly;
@@ -318,7 +375,7 @@ button {
 } */
 
 
-#footer a{
+#footer a {
     font-family: 'Roboto', sans-serif;
     text-decoration: underline;
     color: whitesmoke;
@@ -326,11 +383,18 @@ button {
     padding: 3px;
     margin: 2px;
 }
-#footer a:hover{
-    color:rgb(175, 175, 175);
+
+#footer a:hover {
+    color: rgb(175, 175, 175);
 }
+
 /* Utility */
 hr {
     border: 3px solid rgb(56, 55, 55);
     color: black;
+}
+
+.btn:hover{
+    background-color:rgb(193, 17, 25) !important;
+    border-color: rgb(193, 17, 25) !important;
 }
