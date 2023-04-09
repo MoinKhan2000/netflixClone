@@ -10,6 +10,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter&family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,12 +20,15 @@
                 <img src="/images/logo.png" alt="">
             </div>
             <div id="buttons">
-                <button id="signIn">Sign In</button>
-                <select name="English" id="English">
-                    <option value="English">English</option>
-                    <option value="Hindi">Hindi</option>
-                    <option value="Urdu">Urdu</option>
-                </select>
+                <div id="logoLang">
+                    <ion-icon  name="globe-outline"></ion-icon>
+                    <select name="English" id="English">W
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Urdu">Urdu</option>
+                    </select>
+                </div>
+                <button class="btn" id="signIn">Sign In</button>
             </div>
         </div>
 
@@ -37,7 +41,7 @@
             <div>
                 <div id="searchBox">
                     <input type="search" name="email" id="email" placeholder="Email address">
-                    <input type="button" id="started" value="Get Started &#x276F;">
+                    <input type="button" id="started" class="btn"  value="Get Started &#x276F;">
                 </div>
             </div>
         </div>
@@ -50,7 +54,7 @@
             <p>Chromecast, Apple TV, Blu-ray players and more.</p>
         </div>
         <div id="enjoyTvRight">
-            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="" >
         </div>
     </section>
     <hr>
@@ -93,7 +97,7 @@
     <section id="faQ">
         <h1>Frequently Asked Questions</h1>
         <details>
-            <summary>What is Netflix?</summary>
+            <summary>What is Netflix? <span>+</span></summary>
             <div> Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
                 documentaries and more – on thousands of internet-connected devices.
 
@@ -102,14 +106,14 @@
                 There's always something new to discover, and new TV shows and movies are added every week!</div>
         </details>
         <details>
-            <summary>How much does Netflix cost?</summary>
+            <summary>How much does Netflix cost? <span>+</span></summary>
             <div> Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
                 monthly
                 fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</div>
         </details>
         <details>
             <summary>
-                Where can I watch?
+                Where can I watch? <span>+</span>
             </summary>
             <div> Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
                 netflix.com from
@@ -123,7 +127,7 @@
         </details>
         <details>
             <summary>
-                How do I cancel?
+                How do I cancel? <span>+</span>
             </summary>
             <div> Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your
                 account
@@ -131,7 +135,7 @@
         </details>
         <details>
             <summary>
-                What can I watch on Netflix?
+                What can I watch on Netflix? <span>+</span>
             </summary>
             <div> Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
                 Netflix
@@ -139,7 +143,7 @@
         </details>
         <details>
             <summary>
-                Is Netflix good for kids?
+                Is Netflix good for kids? <span>+</span>
             </summary>
             <div> The Netflix Kids experience is included in your membership to give parents control while kids enjoy
                 family-friendly TV shows and films in their own space.
@@ -156,7 +160,7 @@
         <p>Ready to watch? Enter your email to create or restart your membership.</p>
         <div id="searchBoxBottom">
             <input type="search" name="emailBottom" id="emailBottom" placeholder="Email address">
-            <input type="button" id="startedBottom" value="Get Started &#x276F;">
+            <input type="button" id="startedBottom" class="btn"  value="Get Started &#x276F;">
         </div>
     </div>
 
@@ -184,7 +188,9 @@
                 href="#">Corporate Information</a><a href="#">Legal Notices</a>
 
         </div>
-        <div><p>Netflix India</p></div>
+        <div>
+            <p>Netflix India</p>
+        </div>
 
     </section>
 
