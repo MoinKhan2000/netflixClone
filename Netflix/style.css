@@ -96,6 +96,7 @@ button {
 }
 
 #logoLang {
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,9 +106,10 @@ button {
     background: transparent;
 }
 
-ion-icon{
+ion-icon {
     font-size: 20px;
 }
+
 #logoLang>select {
     color: white;
     width: 90px;
@@ -163,7 +165,7 @@ ion-icon{
 #watchEveryWhere,
 #createProfile {
     display: flex;
-    width: 96vw;
+    width: 100%;
     align-items: center;
     justify-content: center;
     min-height: 600px;
@@ -178,6 +180,7 @@ ion-icon{
     font-weight: 900;
     font-family: 'Archivo Black', sans-serif;
 }
+
 #enjoyTv p,
 #downloadShows p,
 #watchEveryWhere p,
@@ -210,14 +213,14 @@ ion-icon{
     align-items: center;
     align-content: center;
     position: relative;
-width: 30rem;
+    width: 30rem;
 }
 
 #enjoyTvRight img,
 #downloadLeft img,
 #watchEveryWhere img,
 #createProfile img {
-     width: 100%; 
+    width: 100%;
 }
 
 /* Adding all the gif */
@@ -252,7 +255,7 @@ width: 30rem;
     align-items: center;
     flex-direction: column;
     padding: 30px;
-  
+
 }
 
 #faQ h1 {
@@ -271,7 +274,7 @@ width: 30rem;
 
 
 #faQ summary {
-    font-family:  sans-serif;
+    font-family: sans-serif;
     background-color: #2d2d2d;
     border: none;
     margin: 2px auto;
@@ -379,7 +382,7 @@ width: 30rem;
     font-family: 'Roboto', sans-serif;
     text-decoration: underline;
     color: whitesmoke;
-    font-size: 0.61rem;
+    font-size: 1rem;
     padding: 3px;
     margin: 2px;
 }
@@ -388,13 +391,133 @@ width: 30rem;
     color: rgb(175, 175, 175);
 }
 
+#bottomNetflix {
+    font-size: 20px !important;
+}
+
 /* Utility */
 hr {
     border: 3px solid rgb(56, 55, 55);
     color: black;
 }
 
-.btn:hover{
-    background-color:rgb(193, 17, 25) !important;
+.btn:hover {
+    background-color: rgb(193, 17, 25) !important;
     border-color: rgb(193, 17, 25) !important;
+}
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        width: 50vw;
+        top: 0;
+    }
+
+    #enjoyTv p,
+    #downloadShows p,
+    #watchEveryWhere p,
+    #createProfile p {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    #enjoyTv h1,
+    #downloadShows h1,
+    #watchEveryWhere h1,
+    #createProfile h1 {
+        font-size: 2rem;
+    }
+
+    #content,
+    #contentBottom {
+        text-align: center;
+        line-height: 1;
+        padding: 20px;
+    }
+
+    #header {
+        justify-content: space-around;
+    }
+
+    #enjoyTvLeft,
+    #downloadRight,
+    #watchEveryWhereLeft,
+    #createProfileLeft {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 1rem;
+        align-items: center;
+        height: 1% !important;
+    }
+
+    #enjoyTvRight img,
+    #downloadLeft img,
+    #watchEveryWhere img,
+    #createProfile img {
+
+        width: 95%;
+
+    }
+
+    #enjoyTvRight,
+    #downloadLeft,
+    #watchEveryWherRight,
+    #createProfileRight,
+    #watchEveryWhereRight {
+        padding: 20px;
+    }
+
+    #enjoyTvRight::before {
+        width: 62%;
+        left: 4.5rem;
+        height: 50%;
+    }
+
+    #watchEveryWhereRight::before {
+        width: 52%;
+        left: 5.5rem;
+        height: 42%;
+    }
+
+    #enjoyTv,
+    #downloadShows,
+    #watchEveryWhere,
+    #createProfile {
+        min-height: fit-content;
+    }
+
+    #searchBoxBottom {
+        flex-wrap: wrap;
+    }
+
+    #faQ details {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width:600px) {
+
+    #navbar {
+        top: -2rem;
+    }
+
+    #enjoyTv,
+    #downloadShows,
+    #watchEveryWhere,
+    #createProfile {
+        width: 100vw;
+    }
+
+    #enjoyTvLeft,
+    #downloadRight,
+    #watchEveryWhereLeft,
+    #createProfileLeft {
+        max-width: 75%;
+        text-align: center;
+    }
 }
