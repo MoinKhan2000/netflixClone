@@ -1,0 +1,523 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Targetting the navbar  */
+#header {
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 100vw; */
+    overflow-x: hidden;
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('./images/background.png') no-repeat center/cover;
+}
+
+#logo img {
+    width: 150px;
+}
+
+#buttons select,
+button {
+    background-color: rgb(229 9 20);
+    color: white;
+    width: 75px;
+    padding: 3px;
+    margin: 0px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+#buttons {
+    display: flex;
+}
+
+#buttons select {
+    background-color: transparent !important;
+    border: 2px solid whitesmoke;
+    color: white;
+}
+
+#buttons select option {
+    color: black;
+}
+
+#buttons span {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150vw;
+    position: relative;
+    top: -6rem;
+}
+
+/*  */
+#content,
+#contentBottom {
+    text-align: center;
+    line-height: 2;
+    padding: 20px;
+}
+
+#content h1,
+#contentBottom h1 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#logoLang {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #a6a0a0;
+    padding: 2px 5px;
+    border-radius: 4px;
+    background: transparent;
+}
+
+ion-icon {
+    font-size: 20px;
+}
+
+#logoLang>select {
+    color: white;
+    width: 90px;
+    padding: 7px 0px;
+    margin: 0px 0px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 15px;
+    background: transparent;
+    text-align: center;
+}
+
+#content p,
+#contentBottom p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#email {
+    border: 2px solid whitesmoke;
+    background-color: transparent;
+    color: white;
+    width: 350px;
+    padding: 18px;
+    margin: 10px;
+}
+
+#started {
+    background-color: rgb(229 9 20);
+    color: white;
+    width: 170px;
+    padding: 13px;
+    font-size: 20px;
+    border-left: none;
+    border: 2px solid rgb(299 9 20);
+    border-radius: 6px;
+}
+
+#searchBox {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Section enjoyTv started */
+#enjoyTv,
+#downloadShows,
+#watchEveryWhere,
+#createProfile {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+    flex-wrap: wrap;
+}
+
+#enjoyTv h1,
+#downloadShows h1,
+#watchEveryWhere h1,
+#createProfile h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#enjoyTv p,
+#downloadShows p,
+#watchEveryWhere p,
+#createProfile p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#enjoyTvLeft,
+#downloadRight,
+#watchEveryWhereLeft,
+#createProfileLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid white; */
+    padding: 20px;
+    min-width: 20%;
+    max-width: 40%;
+}
+
+#enjoyTvRight,
+#downloadLeft,
+#watchEveryWherRight,
+#createProfileRight,
+#watchEveryWhereRight {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    width: 30rem;
+}
+
+#enjoyTvRight img,
+#downloadLeft img,
+#watchEveryWhere img,
+#createProfile img {
+    width: 100%;
+}
+
+/* Adding all the gif */
+#enjoyTvRight::before,
+#watchEveryWhereRight::before {
+    content: "";
+    position: absolute;
+    height: 60%;
+    width: 83%;
+    left: 41px;
+    z-index: -1;
+    opacity: 1;
+    background: url(https://media.tenor.com/OEE4YCpJO2wAAAAC/shah-rukh-khan-pathaan.gif) no-repeat center/cover;
+}
+
+#watchEveryWhereRight::before {
+    content: "";
+    position: absolute;
+    width: 62%;
+    left: 6rem;
+    height: 45%;
+    top: 40px;
+    z-index: -1;
+    opacity: 1;
+    background: url(https://media.tenor.com/4VWczGoUxkUAAAAC/shah-rukh-khan-pathaan.gif) no-repeat center/cover;
+}
+
+/*  FAQ   */
+#faQ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+#faQ h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2rem;
+}
+
+#faQ details {
+    margin: 5px;
+    font-size: 30px;
+    min-height: 50px;
+    display: flex;
+    width: 80%;
+    position: relative
+}
+
+
+#faQ summary {
+    font-family: sans-serif;
+    background-color: #2d2d2d;
+    border: none;
+    margin: 2px auto;
+    font-size: 20px;
+    min-height: 30px;
+    display: flex;
+    padding: 1.5rem;
+    transition: all 1s;
+}
+
+#faQ summary span {
+    position: absolute;
+    right: 20px;
+    font-size: 40px;
+    top: 16px;
+    transition: all 0.1s;
+}
+
+#faQ summary span:hover {
+    transform: rotate(45deg)
+}
+
+#faQ summary:hover {
+    background-color: rgb(124 124 124);
+}
+
+#faQ div {
+    font-family: 'Roboto', sans-serif;
+    padding: 12px;
+    font-size: 20px;
+    background-color: rgb(75 71 71)
+}
+
+
+#startedBottom {
+    background-color: rgb(229 9 20);
+    color: white;
+    width: 165px;
+    padding: 16px;
+    margin: 4px;
+    border: 2px solid rgb(299 9 20);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#emailBottom {
+    border: 2px solid whitesmoke;
+    background-color: transparent;
+    color: white;
+    width: 350px;
+    padding: 18px;
+    margin: 5px;
+}
+
+#contentBottom p {
+    font-size: 20px;
+}
+
+#searchBoxBottom {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer  */
+#footer_section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 96vw;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+#footer_section div p {
+    color: whitesmoke;
+    font-size: 0.61rem;
+    padding: 3px;
+    margin: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footer {
+    display: flex;
+    height: 115px;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+
+/*
+#left , #mid,#right{
+    display: flex;
+}
+
+#left a ,#mid a ,#right a  {
+    text-decoration: none;
+    color: whitesmoke
+} */
+
+
+#footer a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    color: whitesmoke;
+    font-size: 1rem;
+    padding: 3px;
+    margin: 2px;
+}
+
+#footer a:hover {
+    color: rgb(175, 175, 175);
+}
+
+#bottomNetflix {
+    font-size: 20px !important;
+}
+
+/* Utility */
+hr {
+    border: 3px solid rgb(56, 55, 55);
+    color: black;
+}
+
+.btn:hover {
+    background-color: rgb(193, 17, 25) !important;
+    border-color: rgb(193, 17, 25) !important;
+}
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        width: 50vw;
+        top: 0;
+    }
+
+    #enjoyTv p,
+    #downloadShows p,
+    #watchEveryWhere p,
+    #createProfile p {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    #enjoyTv h1,
+    #downloadShows h1,
+    #watchEveryWhere h1,
+    #createProfile h1 {
+        font-size: 2rem;
+    }
+
+    #content,
+    #contentBottom {
+        text-align: center;
+        line-height: 1;
+        padding: 20px;
+    }
+
+    #header {
+        justify-content: space-around;
+    }
+
+    #enjoyTvLeft,
+    #downloadRight,
+    #watchEveryWhereLeft,
+    #createProfileLeft {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 1rem;
+        align-items: center;
+        height: 1% !important;
+    }
+
+    #enjoyTvRight img,
+    #downloadLeft img,
+    #watchEveryWhere img,
+    #createProfile img {
+
+        width: 95%;
+
+    }
+
+    #enjoyTvRight,
+    #downloadLeft,
+    #watchEveryWherRight,
+    #createProfileRight,
+    #watchEveryWhereRight {
+        padding: 20px;
+    }
+
+    #enjoyTvRight::before {
+        width: 62%;
+        left: 4.5rem;
+        height: 50%;
+    }
+
+    #watchEveryWhereRight::before {
+        width: 52%;
+        left: 5.5rem;
+        height: 42%;
+    }
+
+    #enjoyTv,
+    #downloadShows,
+    #watchEveryWhere,
+    #createProfile {
+        min-height: fit-content;
+    }
+
+    #searchBoxBottom {
+        flex-wrap: wrap;
+    }
+
+    #faQ details {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width:600px) {
+
+    #navbar {
+        top: -2rem;
+    }
+
+    #enjoyTv,
+    #downloadShows,
+    #watchEveryWhere,
+    #createProfile {
+        width: 100vw;
+    }
+
+    #enjoyTvLeft,
+    #downloadRight,
+    #watchEveryWhereLeft,
+    #createProfileLeft {
+        max-width: 75%;
+        text-align: center;
+    }
+}
